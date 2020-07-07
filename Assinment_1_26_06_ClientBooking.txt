@@ -1,0 +1,90 @@
+****Assinment*******
+
+make application related to our business domain.
+Application must return JSON as parameter
+save client and get clients
+save client bookings and get client bookings.
+a client is a person who want to travel from point a to b
+save info of client
+clientID
+ClientName
+HomeAdress
+ClientEmail(single)
+DateOfBirth
+MobileNumber(Multiple)
+
+perform CRUD functionality for client
+***Trips or bookings for clients***
+Bookings Table
+
+BookingID
+BookingDate
+BookingTime
+BookingFromAddress
+BookingToAdress.
+
+1st task to do:
+ER_Diagram make 
+client have multiple bookings
+1 booking must be associated with a single client
+adresses and phone numbers can be multiple.
+****
+create tables in SQL Server and then perform primary key etc and finalize the DB 
+
+***Start Coding on the Database***
+client controller
+perform client CRUD in client controller
+bookingcontroller
+in booking controller perform booking CRUD operations and getclient booking
+
+in booking when you save booking then checks:
+1) a person have a booking at 3 pm then 3 bje ky ada ghanta pehle
+or ada ghanta bad wo koi booking nai bna skta
+if a person have 3pm booking then he can't have a booking in 2:30 to
+3:30 span.
+2) a person must not have more than 4 bookings per day
+3) make a actionmethod in controller to return all bookings of a 
+client. optional parameter to find all bookings of a client on 
+a specific date.
+
+Model Binding:
+to fetch data from a request which are passed in actions of controllers
+and pass into parameters.. when we pass objects in controller functions
+source of model bind:
+Route parameters
+query string parameters
+send data in body
+files upload binding
+Rules of model Binding:
+e.g a field is not nullable but you send null from postman will it bind whole model 
+or just those attributes.
+2) Attribute Routing
+
+
+Entities represnet your database models
+DTO: Data transfer object: it represent only those things which represenet as a response
+e.g a screen where you want to show clientID, bookingID and booking date
+you made a class in model as DTO
+read object from DB and map your DTOS as Models.
+
+use DTOS instead of DTOS.
+Generally Controllers get DTOS as parameters
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
