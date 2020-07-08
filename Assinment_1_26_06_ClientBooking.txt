@@ -1,4 +1,4 @@
-****Assinment******* Done Git Practise
+****Assinment*******
 
 make application related to our business domain.
 Application must return JSON as parameter
