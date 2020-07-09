@@ -14,7 +14,7 @@ using AutoMapper;
 using ClientBooking.Models;
 using Microsoft.OpenApi.Models;
 
-//Develop created
+//master created
 namespace ClientBooking
 {
     public class Startup
