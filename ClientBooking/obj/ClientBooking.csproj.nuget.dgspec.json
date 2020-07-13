@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Yaseen\\Working_Area\\Self-Training\\ClientBooking\\ClientBooking\\ClientBooking.csproj": {}
+    "C:\\Users\\saleeyas\\Desktop\\ClientBooking\\ClientBooking\\ClientBooking.csproj": {}
   },
   "projects": {
-    "D:\\Yaseen\\Working_Area\\Self-Training\\ClientBooking\\ClientBooking\\ClientBooking.csproj": {
+    "C:\\Users\\saleeyas\\Desktop\\ClientBooking\\ClientBooking\\ClientBooking.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Yaseen\\Working_Area\\Self-Training\\ClientBooking\\ClientBooking\\ClientBooking.csproj",
+        "projectUniqueName": "C:\\Users\\saleeyas\\Desktop\\ClientBooking\\ClientBooking\\ClientBooking.csproj",
         "projectName": "ClientBooking",
-        "projectPath": "D:\\Yaseen\\Working_Area\\Self-Training\\ClientBooking\\ClientBooking\\ClientBooking.csproj",
+        "projectPath": "C:\\Users\\saleeyas\\Desktop\\ClientBooking\\ClientBooking\\ClientBooking.csproj",
         "packagesPath": "C:\\Users\\saleeyas\\.nuget\\packages\\",
-        "outputPath": "D:\\Yaseen\\Working_Area\\Self-Training\\ClientBooking\\ClientBooking\\obj\\",
+        "outputPath": "C:\\Users\\saleeyas\\Desktop\\ClientBooking\\ClientBooking\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

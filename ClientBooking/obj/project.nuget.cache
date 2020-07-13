@@ -1,8 +1,12 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "mWD9LtKx7Ehn3G2fDl+45bDsxaz/WnAPRIarTYpK2M/yHZ+HPnPBk9xthKwf9sbh+7kdVv5OaP0h1okAQO2WvA==",
+=======
+  "dgSpecHash": "xmn+1yWi8tbWw+ivj9bvXu92My7MlTbCM5W2OrpyH9S0+8eXOfk9wsH3AK+k4Qf8S7/EDdTheSZLTrAVLuQeSQ==",
+>>>>>>> e15cf7ae425353aa2842481092988d5c3f14f3bb
   "success": true,
-  "projectFilePath": "D:\\Yaseen\\Working_Area\\Self-Training\\ClientBooking\\ClientBooking\\ClientBooking.csproj",
+  "projectFilePath": "C:\\Users\\saleeyas\\Desktop\\ClientBooking\\ClientBooking\\ClientBooking.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\saleeyas\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\saleeyas\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
