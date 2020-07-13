@@ -16,12 +16,12 @@ namespace ClientBooking.Controllers
     [ApiController]
     public class ClientController : ControllerBase
     {
-        private ClientRepository ClientRepository;
+        public readonly IClientRepository ClientRepository;
         private readonly IMapper _mapper;
 
-        public ClientController(IMapper mapper)
+        public ClientController(IMapper mapper,IClientRepository context)
         {
-            ClientRepository = new ClientRepository();
+            ClientRepository = context;
             _mapper = mapper ??
                 throw new ArgumentNullException(nameof(mapper));
         }

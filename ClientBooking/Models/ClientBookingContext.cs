@@ -20,6 +20,7 @@ namespace ClientBooking.Models
         public virtual DbSet<BookingAdress> BookingAdress { get; set; }
         public virtual DbSet<Client> Client { get; set; }
         public virtual DbSet<ClientContact> ClientContact { get; set; }
+        public virtual DbSet<EmailLog> EmailLog { get; set; }
 
         //Just for now comment the OnConfiguring() method of Client|BookingContext class because later we will configure our
         //Dependency Injection inside the Startup.cs class

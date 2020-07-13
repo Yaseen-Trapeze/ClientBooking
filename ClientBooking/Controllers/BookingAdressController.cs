@@ -15,12 +15,12 @@ namespace ClientBooking.Controllers
     [ApiController]
     public class BookingAdressController : ControllerBase
     {
-        private BookingAdressRepository BookingAdressRepository;
+        public readonly IBookingAdressRepository BookingAdressRepository;
         private readonly IMapper _mapper;
 
-        public BookingAdressController(IMapper mapper)
+        public BookingAdressController(IMapper mapper, IBookingAdressRepository context)
         {
-            BookingAdressRepository = new BookingAdressRepository();
+            BookingAdressRepository = context;
             _mapper = mapper ??
                 throw new ArgumentNullException(nameof(mapper));
         }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClientBooking.Repository
 {
-    interface IBookingRepository
+   public interface IBookingRepository
     {
         IEnumerable<Booking> GetAllBookings();
         IEnumerable<Booking> GetBookingByClientID(int ClientId, DateTime Date);
