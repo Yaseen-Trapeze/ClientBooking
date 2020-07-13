@@ -8201,11 +8201,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\saleeyas\\Desktop\\ClientBooking\\ClientBooking\\ClientBooking.csproj",
+      "projectUniqueName": "D:\\Yaseen\\Working_Area\\Self-Training\\ClientBooking\\ClientBooking\\ClientBooking.csproj",
       "projectName": "ClientBooking",
-      "projectPath": "C:\\Users\\saleeyas\\Desktop\\ClientBooking\\ClientBooking\\ClientBooking.csproj",
+      "projectPath": "D:\\Yaseen\\Working_Area\\Self-Training\\ClientBooking\\ClientBooking\\ClientBooking.csproj",
       "packagesPath": "C:\\Users\\saleeyas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\saleeyas\\Desktop\\ClientBooking\\ClientBooking\\obj\\",
+      "outputPath": "D:\\Yaseen\\Working_Area\\Self-Training\\ClientBooking\\ClientBooking\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -8291,5 +8291,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file D:\\Yaseen\\Working_Area\\Self-Training\\ClientBooking\\ClientBooking\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

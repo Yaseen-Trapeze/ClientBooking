@@ -67,8 +67,6 @@ namespace ClientBooking.Controllers
             {
 
                 var BookingId = _BookingRepository.AddBooking(booking);
-                
-
                 if (BookingId > 0)
                 {
                     //configuration
