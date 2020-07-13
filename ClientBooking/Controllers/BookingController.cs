@@ -20,18 +20,15 @@ namespace ClientBooking.Controllers
     {
         public readonly IBookingRepository _BookingRepository;
         private readonly Microsoft.Extensions.Configuration.IConfiguration _Configuration;
-        private readonly IEmailLogRepository _SendGridRepository;
-        private readonly IEmailLogRepository _SMTPRepository;
+        private readonly IEmailLogRepository _EmailLogRepository;
         private readonly IMapper _mapper;
 
-        public BookingController(IMapper mapper, IBookingRepository context,IEmailLogRepository sendgridcontext,
-            IEmailLogRepository smtpcontext, Microsoft.Extensions.Configuration.IConfiguration configuration)
+        public BookingController(IMapper mapper, IBookingRepository context,IEmailLogRepository emaillogcontext
+            , Microsoft.Extensions.Configuration.IConfiguration configuration)
         {
             _BookingRepository = context;
             _Configuration = configuration;
-            _SendGridRepository = sendgridcontext;
-            _SMTPRepository = smtpcontext;
-
+            _EmailLogRepository = emaillogcontext;
              _mapper = mapper ??
                 throw new ArgumentNullException(nameof(mapper));
         }
@@ -79,12 +76,12 @@ namespace ClientBooking.Controllers
                     var emailLog = _Configuration.GetValue<string>("EmailLogsService:EmailServiceProvider");
                     if(emailLog == "SendGrid")
                     {
-                        _SendGridRepository.EmailLog("This email is Sent By SendGrid", DateTime.Today, BookingId);
+                        _EmailLogRepository.EmailLog("This email is Sent By SendGrid", DateTime.Today, BookingId);
 
                     }
                     else if (emailLog == "SMTP")
                     {
-                        _SMTPRepository.EmailLog("This email is Sent By SMTP", DateTime.Today, BookingId);
+                        _EmailLogRepository.EmailLog("This email is Sent By SMTP", DateTime.Today, BookingId);
                     }
                     return Ok(BookingId);
                 }

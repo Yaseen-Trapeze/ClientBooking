@@ -6,25 +6,25 @@ using System.Threading.Tasks;
 
 namespace ClientBooking.Repository
 {
-    public class SMTPRepository : IEmailLogRepository
+    public class EmailLogRepository : IEmailLogRepository
     {
-        private ClientBookingContext SMTPDB;
+        private ClientBookingContext EmailLogDB;
 
-        public SMTPRepository()
+        public EmailLogRepository()
         {
-            SMTPDB = new ClientBookingContext() ?? throw new ArgumentNullException(nameof(SMTPDB));
+            EmailLogDB = new ClientBookingContext() ?? throw new ArgumentNullException(nameof(EmailLogDB));
         }
 
         public void EmailLog(string Email, DateTime Date, int BookingId)
         {
             EmailLog emailLog = new EmailLog()
             {
-                Email = "This email is Sent By SMTP",
+                Email = Email,
                 Date = DateTime.Today,
                 BookingId = BookingId
             };
-            SMTPDB.EmailLog.Add(emailLog);
-            SMTPDB.SaveChanges();
+            EmailLogDB.EmailLog.Add(emailLog);
+            EmailLogDB.SaveChanges();
         }
     }
 }
