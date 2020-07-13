@@ -38,7 +38,7 @@ namespace ClientBooking
             services.AddScoped<IClientRepository, ClientRepository>();
             services.AddScoped<IBookingRepository, BookingRepository>();
             services.AddScoped<IBookingAdressRepository, BookingAdressRepository>();
-            services.AddScoped<IEmailLogRepository, EmailLogRepository>();
+            services.AddTransient<IEmailLogRepository, EmailLogRepository>();
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
         }
