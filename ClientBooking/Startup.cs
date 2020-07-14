@@ -38,16 +38,9 @@ namespace ClientBooking
             services.AddScoped<IClientRepository, ClientRepository>();
             services.AddScoped<IBookingRepository, BookingRepository>();
             services.AddScoped<IBookingAdressRepository, BookingAdressRepository>();
-            var emaillogservice = Configuration["EmailLogsService:EmailServiceProvider"];
-            if (emaillogservice == "SendGrid")
-            {
-                services.AddTransient<IEmailLogRepository, SendGridRepository>();
-            }
-            else if (emaillogservice == "SMTP")
-            {
-                services.AddTransient<IEmailLogRepository, SMTPRepository>();
-            }
-                services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+            services.AddTransient<IEmailLogRepository, SendGridRepository>();
+            services.AddTransient<IEmailLogRepository, SMTPRepository>();
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
         }
 
@@ -77,7 +70,7 @@ namespace ClientBooking
                 endpoints.MapControllers();
             });
 
-            
+
         }
     }
 }

@@ -70,10 +70,10 @@ namespace ClientBooking.Controllers
                     switch (emailLog)
                     {
                         case "SendGrid":
-                            _EmailLogRepository.EmailLog("This email is Sent By SendGrid", DateTime.Today, BookingId);
+                            _EmailLogRepository.EmailLog("This email is Sent By " + emailLog, DateTime.Today, BookingId);
                             break;
                         case "SMTP":
-                            _EmailLogRepository.EmailLog("This email is Sent By SMTP", DateTime.Today, BookingId);
+                            _EmailLogRepository.EmailLog("This email is Sent By " + emailLog, DateTime.Today, BookingId);
                             break;
                     }
                     return Ok(BookingId);
